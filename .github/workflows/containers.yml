@@ -41,7 +41,7 @@ jobs:
       - name: Install dependencies
         run: bundle config set --local path 'vendor/bundle'
       - name: Setup environment configuration
-        run: cp .sample.env .env
+        run: touch .sample.env .env
       - name: Setup database
         run: bundle exec rake db:setup
       - name: Run tests
