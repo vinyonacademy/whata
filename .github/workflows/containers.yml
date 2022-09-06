@@ -43,7 +43,7 @@ jobs:
       - name: Setup environment configuration
         run: touch .sample.env .env
       - name: Setup database
-        run: bundle exec rake db:migrate
+        run: bundle exec rake migrate
       - name: Run tests
         run: bundle exec rake
       - name: Install appraisal
